@@ -311,13 +311,13 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   // "primary":    $primary,
-  "primary":    #030303, // custom
+  "primary":    #030303, // *custom
   // "secondary":  $secondary,
-  "secondary":  #FBFF22, // custom
+  "secondary":  #FBFF22, // *custom
   "success":    $success,
   "info":       $info,
   // "warning":    $warning,
-  "warning":    #C96464, //custom
+  "warning":    #C96464, //*custom
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark
@@ -380,7 +380,7 @@ $spacers: (
   1: $spacer * .25, // 4px
   2: $spacer * .5,  // 8px
   3: $spacer * .75, // 12px
-  4: $spacer * .875, // 14px custom
+  4: $spacer * .875, // 14px *custom
   5: $spacer,
   6: $spacer * 1.125, // 18px
   7: $spacer * 1.25, // 20px
@@ -389,7 +389,7 @@ $spacers: (
   10: $spacer * 2.25, // 36px
   11: $spacer * 2.5, // 40px
   12: $spacer * 3, // 48px
-  13: $spacer * 3.75, // 60px custom
+  13: $spacer * 3.75, // 60px *custom
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -410,7 +410,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 // $body-bg:                   $white !default;
-$body-bg:                   #F3F1E5 !default;// custom
+$body-bg:                   #F3F1E5 !default;// *custom
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -419,7 +419,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -431,7 +431,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default;// *custom
 
 
 // Grid breakpoints
@@ -598,7 +599,8 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0 !default;// *custom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
