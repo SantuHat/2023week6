@@ -5,20 +5,40 @@ header {
   img {
     width: 53px;
     height: 53px;
+    @media (max-width:767px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 .searchSection {
   border: 2px solid #030303;
+  height: 55px;
+  @media (max-width:767px){
+    height: 39px;
+  }
   p{
     padding-right: 210px;
-    padding-left: 24px;
     color: #878787;
     @media (max-width:992px) {
       padding-right: 92px;
     }
   }
   a{
-    width: 51px;
     color: #fff;
+    i{
+      line-height: 1.5;
+    }
+  }
+} 
+.menu {
+  background-color: #F3F1E5;
+  width: 54px;
+  height: 38px;
+  border: 1px solid #030303;
+  border-radius: 4px;
+  padding: 4px 12px;
+  span {
+    font-size: 30px;
   }
 }
