@@ -42,3 +42,19 @@ header {
     font-size: 30px;
   }
 }
+.introduce_chatgpt{
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true") center,lightgray 50%;
+  background-size: cover;
+  min-height: 158px;
+  height: 100%;
+}
+.activity_detail_btn {
+  width: 100%;
+}
+.chatgpt_tag {
+  li{
+    border: 1px solid #030303;
+    border-left: 4px solid #030303;
+    padding: 4px 16px;
+  }
+}
