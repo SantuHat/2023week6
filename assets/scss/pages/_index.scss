@@ -1,56 +1,94 @@
-.banner{
+.banner {
   min-height: 518px;
+
   @media (max-width:767px) {
     min-height: 350px;
   }
+
   background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center;
   background-size: cover;
 }
+
 .activity_list {
   list-style: none;
+
   li {
     transition: .3s;
+
     &:hover {
       transform: scale(1.04);
     }
   }
+
   a {
     display: block;
     text-align: center;
     border: 1px solid #030303;
     padding: 35px 0;
     height: 100%;
-    @media (max-width:767px){
+
+    @media (max-width:767px) {
       padding: 20px 36px;
     }
   }
+
   img {
     width: 80px;
     height: 80px;
+
     @media (max-width:992px) {
       width: 40px;
       height: 40px;
     }
   }
+
   h5 {
     text-align: center;
     margin-top: 12px;
     color: #030303;
-    @media (max-width:992px){
+
+    @media (max-width:992px) {
       font-size: 16px;
     }
   }
+
   .exploreMore {
     @media (max-width:992px) {
       font-size: 24px;
     }
   }
 }
+
 .sparkler {
   max-width: 24px;
   max-height: 24px;
 }
+
 .recent_img {
   height: 255px;
   object-fit: cover;
+}
+
+.album_pic {
+  height: 267px;
+
+  @media (min-width:576px) {
+    height: 274px;
+  }
+}
+
+.albums-tag {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+.albums_card_2 {
+  &:hover {
+    transform: rotate(-2deg);
+  }
+}
+
+.albums_card {
+  &:hover {
+    transform: rotate(0deg);
+  }
 }

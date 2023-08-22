@@ -1,6 +1,19 @@
 .h-100 {
   height: 100%;
 }
+
 .noto-sans {
   font-family: 'Noto Sans TC';
+}
+
+.noto-serif {
+  font-family: 'Noto Serif TC';
+}
+
+.rotate-2 {
+  transform: rotate(2deg);
+}
+
+.rotate--2 {
+  transform: rotate(-2deg);
 }
