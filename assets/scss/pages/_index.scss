@@ -92,3 +92,15 @@
     transform: rotate(0deg);
   }
 }
+
+.subscribeUs_title {
+  @media (min-width:768px) {
+    border-left: 0 !important;
+  }
+}
+
+.subscribeUs_content {
+  @media (min-width:768px) {
+    border-left: 0 !important;
+  }
+}
