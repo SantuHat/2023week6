@@ -10,38 +10,37 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-  <script type="module" crossorigin src="/2023week6/assets/main-9a10eb13.js"></script>
-  <link rel="stylesheet" href="/2023week6/assets/main-0682cf64.css">
+  <script type="module" crossorigin src="/2023week6/assets/main-b5a35c02.js"></script>
+  <link rel="stylesheet" href="/2023week6/assets/main-edb34f64.css">
   <link rel="stylesheet" href="/2023week6/assets/index-63f289d0.css">
 </head>
 
 <body>
   <header class="py-8">
   <div class="container d-flex align-items-center justify-content-between justify-content-md-start">
-    
-      <a class="logo d-flex align-items-center me-md-8 me-lg-12" href="index.html">
-        <img class="me-md-5"
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
-          alt="logo">
-        <h1 class="fs-4 text-primary d-none d-md-block">7TAO </h1>
-        <p class="fs-8 fw-bold text-primary ms-1 d-none d-md-block">活動訂票網</p>
+
+    <a class="logo d-flex align-items-center me-md-8 me-lg-12" href="index.html">
+      <img class="me-md-5"
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo">
+      <h1 class="fs-4 text-primary d-none d-md-block">7TAO </h1>
+      <p class="fs-8 fw-bold text-primary ms-1 d-none d-md-block">活動訂票網</p>
+    </a>
+    <div class="searchSection  d-flex justify-content-between align-items-center">
+      <p class="py-2 ps-3 py-md-5 ps-md-8 text-nowrap">探索活動</p>
+      <a class="bg-primary d-block h-100 p-3 p-md-5" href="#">
+        <i class="icofont-search-1 h-100 d-flex align-items-center"></i>
       </a>
-      <div class="searchSection  d-flex justify-content-between align-items-center">
-        <p class="py-2 ps-3 py-md-5 ps-md-8 text-nowrap">探索活動</p>
-        <a class="bg-primary d-block h-100 p-3 p-md-5" href="#">
-          <i class="icofont-search-1 h-100 d-flex align-items-center"></i>
-        </a>
-      </div>
+    </div>
 
     <div class="loginSection d-flex ms-md-auto">
-      <div class="fileGroup me-8 d-none d-md-block">
+      <a href="#" class="fileGroup me-8 d-none d-md-block text-primary">
         <i class="icofont-ui-file"></i>
-        <span>REGISTER</span>
-      </div>
-      <div class="userGroup d-none d-md-block">
+        <span class="fs-7">REGISTER</span>
+      </a>
+      <a href="#" class="userGroup d-none d-md-block text-primary">
         <i class="icofont-ui-user"></i>
-        <span>LOGIN</span>
-      </div>
+        <span class="fs-7">LOGIN</span>
+      </a>
       <button class="menu d-md-none d-flex align-items-center justify-content-between">
         <span class="material-symbols-rounded">
           menu
@@ -60,9 +59,9 @@
           </p>
         </div>
       </div>
-
     </div>
 
+    <!-- Guide list -->
     <div class="container">
       <ul class="row activity_list ps-0 mb-0">
         <li class="col-4 col-lg-2 pe-1 pe-md-3 pt-5 pb-2">
@@ -114,13 +113,14 @@
       </ul>
     </div>
 
+    <!-- Recent activity -->
     <div class="container">
       <div
         class="recent d-flex align-items-center justify-content-between py-5 px-3 py-md-8 px-md-9 border border-3 border-primary mt-9 mt-md-12 mb-8 mb-md-9">
-        <h2 class="fs-1">
+        <h2 class="fs-md-1 fs-5">
           RECENT
         </h2>
-        <h4 class="fs-4 fw-bold">近期活動</h4>
+        <h4 class="fs-md-4 fs-8 fw-bold">近期活動</h4>
       </div>
     </div>
 
@@ -299,6 +299,7 @@
       </div>
     </div>
 
+    <!-- Online activity -->
     <div class="container">
       <div
         class="online mt-2 mt-md-3 d-flex align-items-center justify-content-between border border-3 border-primary py-5 py-md-8 px-3 px-md-9">
@@ -327,6 +328,7 @@
       </section>
     </div>
 
+    <!-- Albums swiper -->
     <div class="swiper bg-black py-5 py-md-8 mt-md-13 mt-9">
       <div class="swiper-wrapper">
         <h4 class="swiper-slide w-auto text-secondary fw-bold">
@@ -338,6 +340,7 @@
       </div>
     </div>
 
+    <!-- Albums card list -->
     <div class="container py-13">
       <ul class="row gy-12 list-unstyled gy-5 flex-column flex-md-row align-items-center align-items-md-stretch">
         <li class="col-lg-3 col-md-6 col-10">
@@ -383,7 +386,8 @@
       </ul>
     </div>
 
-    <div class="swiper bg-black py-5 py-md-8">
+    <!-- Albums swiper -->
+    <div class="swiper bg-black py-5 py-md-8 mb-9 mb-md-13">
       <div class="swiper-wrapper">
         <h4 class="swiper-slide w-auto text-secondary fw-bold">
           活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS</h4>
@@ -394,29 +398,68 @@
       </div>
     </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Follow us & Subscribe us -->
+    <div class="container">
+      <ul class="row list-unstyled mb-12 mb-md-13">
+        <li class="col-md-6 pe-md-0 mb-8 mb-md-0">
+          <div class="followUs_title border border-2 border-primary">
+            <h4 class="py-5 ps-9 noto-serif fw-bold">#FOLLOW US</h4>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="followUs_content p-9 border border-2 border-primary border-top-0">
+            <p class="noto-sans mb-9">
+              想第一時間獲得新奇有趣的活動資訊？<br>
+              追蹤我們的社群吧！<br>
+              也歡迎你聯繫我們，提供好玩有趣的活動企劃。
+            </p>
+            <div class="d-flex flex-column">
+              <a class="d-block mb-5" href="mailto:7tao.event@gmail.com">
+                <i class="me-5 text-white bg-black p-2 icofont-ui-email d-inline-block"></i>
+                <p class="text-black d-inline-block noto-sans">7tao.event@gmail.com</p>
+              </a>
+              <a class="d-block mb-5" href="tel:+09123123123">
+                <i class="me-5 text-white bg-black p-2 icofont-phone d-inline-block"></i>
+                <p class="d-inline-block noto-sans text-black">09123123123</p>
+              </a>
+              <a class="d-block" href="#">
+                <i class="me-5 text-white bg-black p-2 icofont-facebook d-inline-block"></i>
+                <p class="d-inline-block noto-sans text-black">7TAO七逃</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <li class="col-md-6 ps-md-0 h-100">
+          <div class="subscribeUs_title border border-2 border-primary">
+            <h4 class="py-5 ps-9 noto-serif fw-bold text-uppercase">#subscribe us</h4>
+          </div>
+          <div class="subscribeUs_content p-9 border border-2 border-primary border-top-0 border-bottom-0">
+            <p class="noto-sans mb-md-9 mb-5">
+              訂閱電子報送折價券！<br>
+              定期精選文章資訊及最新優惠資訊，<br>
+              還不通通給我訂閱起來？
+            </p>
+            <input type="email" placeholder="輸入Email"
+              class="bg-transparent w-100 py-4 ps-8 noto-sans border-primary rounded-0">
+          </div>
+          <button type="button"
+            class="bg-primary text-white noto-sans py-5 w-100 d-flex align-items-center justify-content-center">確認訂閱<img
+              class="ms-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7ZLRCcAgDESlEzhCN2036gh1A0dwlDMggmDECIoKPrifBzk0RKnD+gB4KB9FS7yk0CFg0+GSlxTe3HDJTy+N/DUfuYT9utGzr+vz5e77G3E2L8UgP2zWHzbAA9AYEABuM0PRAAAAAElFTkSuQmCC"
+              alt="rounded-double-right-white"></button>
+        </li>
+      </ul>
     </div>
 
-    <footer class="footer">我是 footer</footer>
+    <section class="border-top border-bottom border-3 border-primary">
+      <div class="container py-13 text-center">
+        <h4 class="fs-7 fw-bold fs-md-4 mb-md-5 mb-3">此刻打盹，你將做夢；此刻學習，你將圓夢</h4>
+        <p class="fw-bold fs-9 fs-md-7">——我也不知道誰說的</p>
+      </div>
+    </section>
+
+    <footer class="footer py-8 py-md-9">
+  <div class="container">
+    <p class="fs-9 fs-md-8 noto-sans text-center">© 7TAO七逃. All Rights Reserved</p>
+  </div>
+</footer>
       
 </body>
 
