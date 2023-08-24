@@ -366,7 +366,7 @@
 
     <!-- Follow us & Subscribe us -->
     <div class="container">
-      <ul class="row list-unstyled">
+      <ul class="row list-unstyled mb-12 mb-md-13">
         <li class="col-md-6 pe-md-0 mb-8 mb-md-0">
           <div class="followUs_title border border-2 border-primary">
             <h4 class="py-5 ps-9 noto-serif fw-bold">#FOLLOW US</h4>
@@ -403,7 +403,8 @@
               定期精選文章資訊及最新優惠資訊，<br>
               還不通通給我訂閱起來？
             </p>
-            <input type="email" placeholder="輸入Email" class="bg-transparent w-100 py-4 ps-8 noto-sans border-primary">
+            <input type="email" placeholder="輸入Email"
+              class="bg-transparent w-100 py-4 ps-8 noto-sans border-primary rounded-0">
           </div>
           <button type="button"
             class="bg-primary text-white noto-sans py-5 w-100 d-flex align-items-center justify-content-center">確認訂閱<img
@@ -413,27 +414,12 @@
       </ul>
     </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
+    <section class="border-top border-bottom border-3 border-primary">
+      <div class="container py-13 text-center">
+        <h4 class="fs-7 fw-bold fs-md-4 mb-md-5 mb-3">此刻打盹，你將做夢；此刻學習，你將圓夢</h4>
+        <p class="fw-bold fs-9 fs-md-7">——我也不知道誰說的</p>
       </div>
-    </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
