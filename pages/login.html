@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="container text-center mt-13">
+      <img class="sparkler mt-13 sparkler-w-32"
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+        alt="sparkler">
+      <h5 class="fw-bold mt-5">會員登入</h5>
+      <form class="row justify-content-center needs-validation" novalidate>
+        <div class="col-md-4">
+          <div class="mt-5 text-start">
+            <label for="username" class="form-label noto-sans">帳號</label>
+            <input type="text" class="form-control border-2 border-primary" id="username" placeholder="請輸入帳號" required>
+          </div>
+          <div class="mt-5 text-start">
+            <label for="password" class="form-label noto-sans">密碼</label>
+            <input type="password" class="form-control border-2 border-primary" id="password" placeholder="請輸入密碼"
+              required>
+          </div>
+          <button class="bg-primary text-white noto-sans w-100 py-2 mt-9">
+            登入
+            <img class="ms-1" src="../assets/images/rounded-double-right-white.png" alt="rounded-double-right-white">
+          </button>
+        </div>
+      </form>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
