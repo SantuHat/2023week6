@@ -69,6 +69,10 @@
   object-fit: cover;
 }
 
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
 .album_pic {
   height: 267px;
 
