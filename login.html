@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>login</title>
-  <script type="module" crossorigin src="/2023week6/assets/main-6b3f3061.js"></script>
-  <link rel="stylesheet" href="/2023week6/assets/main-1e5f6f35.css">
+  <script type="module" crossorigin src="/2023week6/assets/main-e55e9929.js"></script>
+  <link rel="stylesheet" href="/2023week6/assets/main-ab96c681.css">
 </head>
 
 <body>
@@ -52,12 +52,19 @@
         <div class="col-md-4">
           <div class="mt-5 text-start">
             <label for="username" class="form-label noto-sans">帳號</label>
-            <input type="text" class="form-control border-2 border-primary" id="username" placeholder="請輸入帳號" required>
+            <input type="text" class="form-control border-2 border-primary py-2 px-3" id="username" placeholder="請輸入帳號"
+              required>
+            <div class="invalid-feedback mt-0">
+              請輸入帳號
+            </div>
           </div>
           <div class="mt-5 text-start">
             <label for="password" class="form-label noto-sans">密碼</label>
-            <input type="password" class="form-control border-2 border-primary" id="password" placeholder="請輸入密碼"
-              required>
+            <input type="password" class="form-control border-2 border-primary py-2 px-3" id="password"
+              placeholder="請輸入密碼" required>
+            <div class="invalid-feedback mt-0">
+              請輸入密碼
+            </div>
           </div>
           <button class="bg-primary text-white noto-sans w-100 py-2 mt-9">
             登入
@@ -72,6 +79,15 @@
   </div>
 </footer>
       
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+        $('.needs-validation').each(function (index) {
+          $(this).on('submit', function (e) {
+            e.preventDefault();
+            $(this).addClass('was-validated');
+          });
+        });
+      </script>
 </body>
 
 </html>
