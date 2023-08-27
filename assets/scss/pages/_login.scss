@@ -1,0 +1,34 @@
+// html {
+//   height: 100%;
+// }
+.form-control::placeholder {
+  color: #878787;
+  font-size: 20px;
+}
+
+.form-control:focus,
+.was-validated .form-control:valid,
+.was-validated .form-control:valid:focus,
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* 通過驗證樣式 */
+.form-control:focus,
+.was-validated .form-control:valid,
+.was-validated .form-control:valid:focus {
+  border-color: inherit;
+}
+
+/* 未通過驗證樣式 */
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus {
+  border-color: #C96464 !important;
+}
+
+.invalid-feedback {
+  color: #C96464;
+  font-size: 14px;
+}
