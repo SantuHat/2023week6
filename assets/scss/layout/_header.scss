@@ -73,6 +73,10 @@ header {
 }
 
 .loginSection {
+  .fileGroup {
+    border-bottom: 3px solid transparent;
+  }
+
   a {
     &:hover {
       border-bottom: 3px solid #030303;
